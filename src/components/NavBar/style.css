@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.primario {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    background-color:rgb(187, 144, 144);
+    width: 100%;
+}
+
+.logo-tit {
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+.navbar-rs {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.8vw;
+    
+    width:100%;
+    justify-content: stretch;
+    align-self: center;
+}
+
+.navbar-rs a {
+        color: rgb(10, 9, 9);;
+        text-align: center;
+        list-style: none;
+        align-self: flex-start;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.nav-link {
+        color:darkseagreen;
+
+}
+
+.nav-link:hover {
+    background: rgb(60, 89, 114);
+}
+
+.btn {
+            color: whitesmoke;
+            border-color: whitesmoke;
+            transition: none;
+}    
+.btn a {
+                text-decoration: none;
+                color:darkseagreen;
+    
+ }
+    
+.btn:hover {
+             background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+    
+ }
+  
+.btn-check:focus {
+            box-shadow: none;
+            color: brown;
+            transition: none;
+}
+
+a:focus {
+           outline: none;
+            color: brown;
+            transition: none;
+}
+a.navbar-toggler:focus {
+            outline: none !important;
+            box-shadow: none;
+            transition: none;
+}
