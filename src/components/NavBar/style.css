@@ -8,8 +8,9 @@
     flex-direction: row;
     align-items: center;
     align-content: center;
-    background-color:rgb(187, 144, 144);
+    background-color:rgb(196, 116, 116);
     width: 100%;
+    
 }
 
 .logo-tit {
@@ -29,55 +30,54 @@
 }
 
 .navbar-rs a {
-        color: rgb(10, 9, 9);;
+        color: rgb(22, 21, 7);;
         text-align: center;
         list-style: none;
         align-self: flex-start;
+        text-decoration: none;
+}
+.navbar-rs a::after {
+    color: crimson;
+
+}
+.navbar-rs a::before {
+    color: aqua;
 }
 
 .navbar-nav{
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    color: darkseagreen;
+    list-style: none;
+    text-decoration: none;
 }
-.nav-link {
-        color:darkseagreen;
+/*.navbar-li {
+        color:rgb(218, 28, 85);
+        text-decoration: none;
+        list-style: none;
+}*/
 
-}
-
-.nav-link:hover {
-    background: rgb(60, 89, 114);
+.navbar-li:hover {
+    background: rgb(136, 155, 172);
 }
 
 .btn {
             color: whitesmoke;
             border-color: whitesmoke;
             transition: none;
-}    
-.btn a {
-                text-decoration: none;
-                color:darkseagreen;
-    
- }
+}
     
 .btn:hover {
              background: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
     
  }
   
-.btn-check:focus {
-            box-shadow: none;
-            color: brown;
-            transition: none;
+
+.navbtn{
+    color: rgb(228, 231, 31);
 }
 
-a:focus {
-           outline: none;
-            color: brown;
-            transition: none;
-}
-a.navbar-toggler:focus {
-            outline: none !important;
-            box-shadow: none;
-            transition: none;
+.innavbtn{
+    color: rgb(232, 236, 240);
 }
