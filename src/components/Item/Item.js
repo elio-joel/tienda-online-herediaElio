@@ -5,7 +5,7 @@ const Item  = ({product}) => {
             <img alt={product.titulo} src={product.imagen} width="100px" />
             <h2>{product.titulo}</h2>
             <h2>{product.precio}</h2>
-            <h2>{product.stock}</h2>
+            <h2>{product.stock} En stock</h2>
         </div>
     );
 };

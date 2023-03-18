@@ -2,7 +2,7 @@ export const stockProducts = [
     
     {
         id: "bazar-uno",
-        titulo: "Difusor de ambientes + palillos",
+        titulo: "Difusor de ambientes",
         imagen: '/img/bazar-uno.jpeg',
         category: "bazar",
         precio: "$ ARS 450",
@@ -12,7 +12,7 @@ export const stockProducts = [
     {
 
         id: "bazar-dos",
-        titulo: "Palo Santo Linea Sagrada Madre",
+        titulo: "Palo Santo Sagrada Madre",
         imagen: '/img/bazar-dos.jpeg',
         category: "bazar",
         stock: 15,
@@ -60,7 +60,7 @@ export const stockProducts = [
     },
     {
         id: "hogar-uno",
-        titulo: "Mate de madera con bombilla",
+        titulo: "Mate de madera + bombilla",
         imagen: '/img/hogar-uno.jpeg',
         category: "hogar",
         precio: " $ ARS 1200",
@@ -68,7 +68,7 @@ export const stockProducts = [
     },
     {
         id: "hogar-dos",
-        titulo: "Mate de calabaza con bombilla",
+        titulo: "Mate de calabaza + bombilla",
         imagen: '/img/hogar-dos.jpeg',
         category: "hogar",
         precio: "$ ARS 1400",
@@ -76,7 +76,7 @@ export const stockProducts = [
     },
     {
         id: "hogar-tres",
-        titulo: "Mate de calabaza con bombilla",
+        titulo: "Mate de calabaza + bombilla",
         imagen: '/img/hogar-tres.jpeg',
         category: "hogar",
         precio: "$ ARS 1300",

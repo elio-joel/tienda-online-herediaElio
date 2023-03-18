@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'react';
+import './style.css';
+import { useEffect } from 'react';
 
 
-const Counter = () => {
-    const [counter, setCounter] = useState(0);
+
+
+const Counter = ({counter, setCounter}) => {
     useEffect(() => {
-        if (counter > 15) {
+        if (counter === 15) {
             alert('Superaste el maximo de stock');
         }
     }, [counter]);
@@ -12,8 +14,9 @@ const Counter = () => {
 
 
     const onAdd = () => {
+        if (counter !== 15) {
         setCounter(counter + 1);
-
+        }
     };
 
     const substract = () => {
@@ -24,10 +27,10 @@ const Counter = () => {
 
     return (
         <div>
-            <h2>{counter}</h2>
-            <div>
-                <button onClick={onAdd}>+</button>
-                <button onClick={substract}>-</button>
+            <div className='btn-cnt'>
+                <button onClick={substract}> - </button>
+                <h2>{counter}</h2>
+                <button onClick={onAdd}> +  </button>
             </div>
         </div>
     );  

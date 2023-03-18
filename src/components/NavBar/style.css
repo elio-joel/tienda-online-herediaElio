@@ -59,11 +59,11 @@
 }*/
 
 .navbar-li:hover {
-    background: rgb(136, 155, 172);
+    background: rgb(121, 66, 66);
 }
 
 .btn {
-            color: whitesmoke;
+            color: rgb(32, 24, 24);
             border-color: whitesmoke;
             transition: none;
 }

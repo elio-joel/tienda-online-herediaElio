@@ -2,6 +2,8 @@ import './style.css';
 import CartWidget from '../CartWidget/CartWidget';
 import { Link, NavLink } from 'react-router-dom';
 
+
+
 const NavBar = () => {
     return (
     <div className='primario'>
@@ -64,7 +66,7 @@ const NavBar = () => {
                                 <button className="btn" type="submit">Search</button>
                                 </form>
                                 <div> 
-                                    <CartWidget/> 
+                                    <CartWidget /> 
                                 </div>    
                             </ul>
                             
