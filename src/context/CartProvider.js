@@ -16,7 +16,7 @@ const CartProvider = ({ children }) => {
       stock: item.stock,
     };
     setCart([...cart, product]);
-    console.log(cart);
+    // console.log(cart);
 
   };
 

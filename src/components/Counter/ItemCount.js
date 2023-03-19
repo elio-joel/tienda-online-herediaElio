@@ -20,7 +20,7 @@ const Counter = ({counter, setCounter}) => {
     };
 
     const substract = () => {
-        if (counter !== 0) {
+        if (counter !== 1) {
             setCounter(counter - 1);
         }
     };

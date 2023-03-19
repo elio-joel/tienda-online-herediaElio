@@ -6,7 +6,7 @@ import { CartContext } from "../../context/CartContext";
 const ItemDetail = ({ detail }) => {
   const navigate = useNavigate();
   const { addItem } = useContext(CartContext);
-  const [counter, setCounter] = useState(0);
+  const [counter, setCounter] = useState(1);
 
   return (
     <div
