@@ -1,4 +1,4 @@
-import { useContext, useEffect } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import { CartContext } from '../../context/CartContext';
 import { Link } from 'react-router-dom';
 
@@ -14,7 +14,7 @@ const CartWidget = () => {
     <Link to={'/cart'}>
       <div>
         <img alt="carrito-compra" src="/img/carrito.png" width='35px' />
-        {cart?.length}
+        {total}
       </div>
     </Link>
   );
