@@ -7,12 +7,14 @@ const Cart = () => {
     <div>
       {cart.map((product) => (
         <div
-          style={{ display: 'flex', flexDirection: 'row', }}
+          style={{ display: 'flex', flexDirection: 'row', justifyContent: 'space-between', }}
           key={product.titulo}
         >
           <img src={product.imagen} alt={product.titulo} width="120px" />
+          <h2> Cantidad {product.quantity}</h2>
           <h2>{product.titulo}</h2>
           <h2>{product.precio}</h2>
+          
           <button onClick={() => quitItem(product.id)}>Eliminar producto</button>
         </div>
       ))}

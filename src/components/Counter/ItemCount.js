@@ -29,7 +29,7 @@ const Counter = ({counter, setCounter}) => {
         <div>
             <div className='btn-cnt'>
                 <button onClick={substract}> - </button>
-                <h2>{counter}</h2>
+                <span>{counter}</span>
                 <button onClick={onAdd}> +  </button>
             </div>
         </div>
