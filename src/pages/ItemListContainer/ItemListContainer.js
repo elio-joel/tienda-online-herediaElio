@@ -7,22 +7,7 @@ import { getFirestore, getDocs, collection } from "firebase/firestore";
 const ItemListContainer = ({ greeting }) => {
   const [productList, setProductList] = useState([]);
   const { categoryId } = useParams();
-  // const getProducts = new Promise((res, rej) => {
-
-  //   if (categoryId) {
-  //     const filtroProd = stockProducts.filter(
-  //       (item) => item.category === categoryId
-  //     );
-  //     setTimeout(() => {
-  //       res(filtroProd);
-  //     }, 1000);
-  //   } else {
-  //     setTimeout(() => {
-  //       res(stockProducts);
-  //     }, 1000);
-  //   }
-
-  // });
+  
 
   const getProducts = () => {
     const db = getFirestore();
@@ -30,24 +15,22 @@ const ItemListContainer = ({ greeting }) => {
 
     getDocs(querySnapshot)
       .then((response) => {
-        const list = response.docs.map((doc) =>{
-          return doc.data()
-        })
-        console.log(list);
-    })
+        const list = response.docs.map((doc) => {
+          console.log(doc);
+          return {
+            id: doc.id, 
+            ...doc.data(),
+          };
+        });
+        setProductList(list);
+      })
       .catch((error) => console.log(error))
   };
 
 
   useEffect(() => {
-    getProducts ();
+    getProducts();
 
-      // .then((response) => {
-      //   setProductList(response);
-      // })
-      // .catch((error) => {
-      //   console.log(error);
-      // });
   }, [categoryId]);
 
   return (

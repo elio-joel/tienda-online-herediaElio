@@ -21,15 +21,15 @@ const ItemDetail = ({ detail }) => {
 
       }}
     >
-      <img src={detail.imagen} alt={detail.titulo} width="300px" />
-      <h2>{detail.titulo}</h2>
-      <h2>{detail.precio}</h2>
-      <h2>{detail.stock}</h2>
+      <img src={`/img/${detail.image}`} alt={detail.title} width="200px" />
+      <h2>{detail.title}</h2>
+      <h2> $ {detail.price}</h2>
+      <h2>Stock disponible: {detail.stock}</h2>
       <Counter counter={counter} setCounter={setCounter} />
       <button onClick={() => navigate('/')}>
         Seguir comprando
       </button>
-      <button disabled={counter > detail.stock ? true: false} onClick={() => addItem (detail, counter)}>
+      <button disabled={counter > detail.stock ? true : false} onClick={() => addItem(detail, counter)}>
         Agregar al carrrito
       </button>
       <button onClick={() => navigate('/cart')}>
