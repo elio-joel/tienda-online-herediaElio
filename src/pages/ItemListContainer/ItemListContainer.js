@@ -30,7 +30,10 @@ const ItemListContainer = ({ greeting }) => {
 
     getDocs(querySnapshot)
       .then((response) => {
-
+        const list = response.docs.map((doc) =>{
+          return doc.data()
+        })
+        console.log(list);
     })
       .catch((error) => console.log(error))
   };
