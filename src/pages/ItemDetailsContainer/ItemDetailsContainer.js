@@ -24,15 +24,9 @@ const ItemDetailsContainer = () => {
 
 
   useEffect(() => {
-    
-  //     .then((response) => {
-  //       setDetailObject(response); 
-      
-  //     })
-  //     .catch((error) => { 
-  //       console.log(error);
-  //     });
+  
     getProduct();
+    
   }, []);
  
   return <div><ItemDetail detail={detailObject} /></div>;

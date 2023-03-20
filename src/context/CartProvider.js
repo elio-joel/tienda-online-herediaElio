@@ -22,10 +22,10 @@ const CartProvider = ({ children }) => {
     } else {
       const product = {
         id: item.id,
-        titulo: item.titulo,
-        precio: item.precio,
+        titulo: item.title,
+        precio: item.price,
         quantity: quantity,
-        imagen: item.imagen,
+        imagen: item.image,
         category: item.category,
         stock: item.stock,
       };
